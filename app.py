@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-VERIFY_TOKEN = "HdksU65463"#os.environ.get("ACCESS_TOKEN")
+VERIFY_TOKEN = os.environ['VERIFY_TOKEN']#"HdksU65463"#os.environ.get("ACCESS_TOKEN")
 PORT = os.environ['PORT']
 machine = TocMachine(
     states=[
