@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import json
 
 VERIFY_TOKEN = "HdksU65463"#os.environ.get("ACCESS_TOKEN")
+PORT = os.environ['PORT']
 machine = TocMachine(
     states=[
         'user',
@@ -192,4 +193,4 @@ def show_fsm():
 
 if __name__ == "__main__":
     show_fsm()
-    run(host="localhost", port=5002, debug=True, reloader=True)
+    run(host="0.0.0.0", port=PORT, debug=True, reloader=True)
