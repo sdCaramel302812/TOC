@@ -7,7 +7,7 @@ from pymessager.message import Messager
 import urllib3
 
 GRAPH_URL = "https://graph.facebook.com/v2.6"
-ACCESS_TOKEN = "EAAEIZB7isbg0BAMLpqqLFL6bBmlVeD18Bxf1UnMdZBhY0GFT2R4YKHD5OYwxhPXaI2OyoVMAvJt4ugazPtOk5tcmqFQ9LAZBMWdbURcK9kNXhYLwXAO5HgAB6XSfb2cNqZBPByPLWaJCFleCSDCGS1hj3E3tws951bZCwZAn8a5wZDZD"#os.environ.get("ACCESS_TOKEN")
+ACCESS_TOKEN = os.environ['ACCESS_TOKEN']#"EAAEIZB7isbg0BAMLpqqLFL6bBmlVeD18Bxf1UnMdZBhY0GFT2R4YKHD5OYwxhPXaI2OyoVMAvJt4ugazPtOk5tcmqFQ9LAZBMWdbURcK9kNXhYLwXAO5HgAB6XSfb2cNqZBPByPLWaJCFleCSDCGS1hj3E3tws951bZCwZAn8a5wZDZD"#os.environ.get("ACCESS_TOKEN")
 
 
 def send_text_message(id, text):
