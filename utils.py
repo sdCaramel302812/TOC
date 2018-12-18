@@ -1,7 +1,6 @@
 import requests
 import os
 import json
-from requests_toolbelt import MultipartEncoder
 from pymessenger.bot import Bot
 from pymessager.message import Messager
 import urllib3
