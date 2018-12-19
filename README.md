@@ -1,17 +1,13 @@
 # TOC Project 2019
 
-Template Code for TOC Project 2019
+## Finite State Machine
 
-A Facebook messenger bot based on a finite state machine
+[fsm](https://github.com/sdCaramel302812/TOC/blob/master/fsm.png)
 
-More details in the [Slides](https://hackmd.io/p/SkpBR-Yam#/) and [FAQ](https://hackmd.io/s/B1Xw7E8kN)
-
-## Setup
-
-### Prerequisite
-* Python 3
-* Facebook Page and App
-* HTTPS Server
+### Feature
+* use nlp to analyze message
+* parse website and send image from imgur
+* deploy on heroku
 
 #### Install Dependency
 ```sh
