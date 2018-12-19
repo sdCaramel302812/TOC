@@ -2,20 +2,20 @@
 
 ## Finite State Machine
 
-[fsm](https://github.com/sdCaramel302812/TOC/blob/master/fsm.png)
+![fsm](./fsm.png)
 
 ### Feature
 * use nlp to analyze message
 * parse website and send image from imgur
 * deploy on heroku
 
-#### Install Dependency
-```sh
-pip3 install -r requirements.txt
-```
+### How to interact with chatbot
 
-* pygraphviz (For visualizing Finite State Machine)
-    * [Setup pygraphviz on Ubuntu](http://www.jianshu.com/p/a3da7ecc5303)
+there are two ways to interact with chatbot
+
+1. recommend games
+
+2. search picture
 
 #### Secret Data
 
