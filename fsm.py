@@ -29,6 +29,15 @@ class TocMachine(GraphMachine):
         sender_id = event['sender']['id']
         responese = send_text_message(sender_id, "what kind of game do you want?")
 
+    def is_help(self, event):
+        if event['message']['text'] == 'help':
+            return True
+        return False
+    
+    def on_enter_help(self, event):
+        sender_id = event['sender']['id']
+        responese = send_text_message(sender_id, "help")
+        
     game_type = 'none'
 
     def is_going_to_ask_price(self, event):
