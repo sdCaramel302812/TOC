@@ -30,6 +30,7 @@ machine = TocMachine(
         {
             'trigger': 'go_back',
             'source': [
+                'help',
                 'ask_game',
                 'ask_price',
                 'pixiv',
