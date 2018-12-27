@@ -17,9 +17,16 @@ machine = TocMachine(
         'ask_price',
         'pixiv',
         'search_by_picture',
-        'search_by_user'
+        'search_by_user',
+        'help'
     ],
     transitions=[
+        {
+            'trigger': 'help',
+            'source': 'user',
+            'dest': 'help',
+            'conditions': 'is_help'
+        },
         {
             'trigger': 'go_back',
             'source': [
@@ -132,6 +139,7 @@ def webhook_handler():
                 else:
                     machine.recommend(event)
                     machine.search(event)
+                    machine.help(event)
                 if understand == False and get_state() == 'user':
                     sender_id = event['sender']['id']
                     responese = send_text_message(sender_id, "I don't understand what you say")
